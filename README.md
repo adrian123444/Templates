@@ -1,2 +1,2 @@
 # Templates
-Da vinci Template
+Picasso Template
