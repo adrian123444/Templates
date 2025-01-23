@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Details - Michelangelo Template</title>
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- Navigation - Desktop -->
+    <div class="bg-white border-bottom sticky-top d-none d-lg-flex justify-content-between align-items-center p-2 px-lg-3 w-100 z-5">
+        <!-- Logo -->
+        <a href="#" class="h5 fw-bold text-decoration-none" style="font-family: Hyper Helix;">Michelangelo</a>
+
+        <div class="d-none d-lg-flex align-items-center gap-5">
+            <a href="#" class="text-decoration-none link-dark">Laptops</a>
+            <a href="#" class="text-decoration-none link-dark">Phones</a>
+            <a href="#" class="text-decoration-none link-dark">Printers</a>
+            <a href="#" class="text-decoration-none link-dark">Sale</a>
+        </div>
+
+        <div class="d-flex gap-2 align-items-center">
+            <!-- Icon - Search -->
+            <a href="#" class="hover rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark" style="width: 44px; height: 44px;">
+                <span class="material-symbols-outlined fs-4">search</span>
+            </a>
+
+            <!-- Icon - Account -->
+            <a href="#" class="hover rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark" style="width: 44px; height: 44px;">
+                <span class="material-symbols-outlined fs-4">person</span>
+            </a>
+    
+            <!-- Icon - Cart -->
+            <a href="#" class="hover rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark" data-bs-toggle="modal" data-bs-target="#cartDesktop" style="width: 44px; height: 44px;">
+                <span class="material-symbols-outlined fs-4">shopping_bag</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Navigation - Mobile -->
+    <div class="bg-white shadow-sm sticky-top d-flex d-lg-none justify-content-between align-items-center px-2 w-100" style="height: 72px;">
+
+        <!-- Logo -->
+        <a href="#" class="h2 fw-bold text-decoration-none me-4" style="font-family: Hyper Helix;">Michelangelo</a>
+
+        <div class="d-flex align-items-center ms-auto h-100">
+
+            <!-- Icon - Search -->
+            <a href="#" class="hover d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark px-2 h-100">
+                <span class="material-symbols-outlined fs-4">search</span>
+            </a>
+
+            <!-- Icon - Cart -->
+            <a href="#" class="hover d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark px-2 h-100" data-bs-toggle="modal" data-bs-target="#cartMobile">
+                <span class="material-symbols-outlined fs-4">shopping_bag</span>
+            </a>
+
+            <!-- Icon - Menu -->
+            <a href="#" type="button" class="hover d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark px-2 h-100" data-bs-toggle="modal" data-bs-target="#burgerMenu">
+                <span class="material-symbols-outlined fs-4">menu</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Side Burger Menu -->
+    <div class="modal fade justify-content-end" id="burgerMenu" tabindex="-1" aria-labelledby="burgerMenu" aria-hidden="true">
+        <div class="side-burger-menu modal-dialog modal-fullscreen">
+            
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <span type="button" class="material-symbols-outlined fs-1 ms-auto" data-bs-dismiss="modal" aria-label="Close">close</span>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="navbar-nav h-100">
+    
+                        <div class="navbar-item d-flex align-items-center py-3 border-bottom">
+                            <a href="#" class="text-decoration-none link-dark">Laptops</a>
+                            <span class="material-symbols-outlined fs-4 ms-auto">chevron_right</span> 
+                        </div>
+                        <div class="navbar-item d-flex align-items-center py-3 border-bottom">
+                            <a href="#" class="text-decoration-none link-dark">Phone</a>
+                            <span class="material-symbols-outlined fs-4 ms-auto">chevron_right</span> 
+                        </div>
+                        <div class="navbar-item d-flex align-items-center py-3 border-bottom">
+                            <a href="#" class="text-decoration-none link-dark">Printers</a>
+                            <span class="material-symbols-outlined fs-4 ms-auto">chevron_right</span> 
+                        </div>
+                        <div class="navbar-item d-flex align-items-center py-3 border-bottom">
+                            <a href="#" class="text-decoration-none link-dark">Sale</a>
+                            <span class="material-symbols-outlined fs-4 ms-auto">chevron_right</span> 
+                        </div>
+
+                        <div class="navbar-item d-flex align-items-center border-top py-3 mt-auto">
+                            <a href="#" class="d-flex align-items-center text-decoration-none link-dark">
+                                <span class="material-symbols-outlined fs-4">person</span> 
+                                Account
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Info -->
+    <section class="container">
+        <div class="row mt-3">
+            <!-- Image & Description -->
+            <div class="col-12 col-lg-6 h-100">
+                <div class="main-image placeholder w-100"></div>
+                <div class="d-flex align-items-center gap-2 overflow-scroll mt-2">
+                    <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                    <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                    <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                    <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                    <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                    <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                    <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                    <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                    <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                    <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                </div>
+            </div>
+
+            <!-- Info -->
+            <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                <!-- ratings -->
+                <div class="d-flex justify-content-start gap-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+
+                    <p class="fw-light ms-2">86 reviews</p>
+                </div>
+
+                <h2 class="mt-1">Product Name</h2>
+                <p class="text-muted opacity-75 small text-uppercase mt-2">Redefining the way you work</p>
+                <p class="fs-4">$29.00</p>
+
+                <!-- benefits -->
+                <div class="grid-2-columns gap-3 my-3">
+                    <p class="fw-light"><i class="bi bi-check-circle me-2"></i>Comfort & Style for your workspace</p>
+                    <p class="fw-light"><i class="bi bi-check-circle me-2"></i>Ultra Modern Design</p>
+                    <p class="fw-light"><i class="bi bi-check-circle me-2"></i>Light & Easy to Carry</p>
+                    <p class="fw-light"><i class="bi bi-check-circle me-2"></i>Made of sustainable materials</p>
+                </div>
+
+                <hr class="opacity-10">
+
+                <!-- Variables -->
+                <p class="text-muted fw-light mt-4 mb-2">Phone Model</p>
+                <div class="d-flex align-items-center gap-2 overflow-auto">
+                    <button type="button" class="btn btn-sm border border-dark border-2 rounded-0 text-uppercase text-nowrap fw-bold px-5 py-3">iPhone 15</button>
+                    <button type="button" class="btn btn-sm border rounded-0 text-uppercase text-nowrap px-5 py-3">iPhone 15 Pro</button>
+                    <button type="button" class="btn btn-sm border rounded-0 text-uppercase text-nowrap px-5 py-3">iPhone 15 Pro Max</button>
+                </div>
+
+                <!-- Quantity & Buy Button -->
+                <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-2 mt-4">
+                    <div class="btn-group border rounded-0" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn text-muted"><i class="bi bi-dash fs-3"></i></button>
+                        <button type="button" class="btn fw-semibold">1</button>
+                        <button type="button" class="btn text-muted"><i class="bi bi-plus fs-3"></i></button>
+                    </div>
+
+                    <button type="button" class="btn btn-lg btn-dark rounded-pill fs-6 text-uppercase px-5 py-3 w-100">$29.00 - Add to cart</button>
+                </div>
+
+                <div class="bg-light d-flex p-4 mt-4">
+                    <p class="d-flex align-items-center"><i class="bi bi-box-seam fs-4 me-2"></i> Order now to receive as soon as <b class="ms-1">Sunday 05 May</b></p>
+                </div>
+
+                <hr class="opacity-10">
+
+                <!-- Icons -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <!-- Item -->
+                    <div class="d-flex flex-column align-items-center justify-content-center gap-2 fw-light">
+                        <i class="bi bi-shield-check fs-1"></i>
+                        <p class="text-center">2-Years Warranty</p>
+                    </div>
+                    <!-- Item -->
+                    <div class="d-flex flex-column align-items-center justify-content-center gap-2 fw-light">
+                        <i class="bi bi-arrow-counterclockwise fs-1"></i>
+                        <p class="text-center">14-Day Returns</p>
+                    </div>
+                    <!-- Item -->
+                    <div class="d-flex flex-column align-items-center justify-content-center gap-2 fw-light">
+                        <i class="bi bi-credit-card fs-1"></i>
+                        <p class="text-center">Secure Checkout</p>
+                    </div>
+                    <!-- Item -->
+                    <div class="d-flex flex-column align-items-center justify-content-center gap-2 fw-light">
+                        <i class="bi bi-truck fs-1"></i>
+                        <p class="text-center">Fast Delivery</p>
+                    </div>
+                </div>
+
+                <hr class="opacity-10">
+
+                <!-- Upsell Product -->
+                <div class="border d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-2 p-2 mb-3">
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="placeholder bg-dark opacity-25" style="height: 56px; min-width: 56px;"></div>
+    
+                        <div class="d-flex flex-column">
+                            <p class="fw-bold">Product Name</p>
+                            <p>$29.00</p>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-sm btn-outline-dark rounded-0 text-uppercase small px-4 py-3 ms-auto w-xs-100">$29.00 - Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12 col-lg-6">
+                <!-- Description -->
+                <p class="fw-bold mt-5 mb-2">Description</p>
+    
+                <p class="fw-light">Your iPhone, but better. Layer your iPhone with crystal clear protection, designed to shield your device without letting its sleek form hide away. 100% recycled, MagSafe compatible, and coated to prevent scratching and yellowing, this second skin for your device is full of considered details to elevate your everyday.</p>
+
+                <p class="fw-bold mt-3 mb-2">Specifications</p>
+    
+                <div class="fw-light">
+                    This product is compatible with: </br>
+
+                    <ul class="fw-light">
+                        <li>iPhone 14 Pro / iPhone 14 Pro Max</li>
+                        <li>All MagSafe chargers & accessories</li>
+                    </ul>
+
+                    <p class="fw-bold mb-1">Product Dimensions:</p>
+                    <p><span class="fw-medium">iPhone 14 Pro:</span> 15 cm x 7.5 cm x 1.3 cm, 36 g</p>
+                    <p><span class="fw-medium">iPhone 14 Pro Max:</span> 16.4 cm x 8.2 cm x 1.3 cm, 42 g</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Reviews -->
+                <p class="fw-bold mt-5 mb-2">Reviews</p>
+                <p class="fw-light">95% of reviewers would recommend this product to a friend.</p>
+                
+                <hr class="opacity-10">
+
+                <!-- Review -->
+                <div class="d-flex flex-column my-4">
+                    <div class="d-flex justify-content-start align-items-center gap-2 mb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        
+                        <p class="text-muted small fw-light ms-1">4 days ago</p>
+                    </div>
+                    <p class="h4 fw-bold mb-1">Greatly convenient!!</p>
+                    <p class="fw-light text-muted">The portable and size factor makes this product really convenient to carry anywhere.</p>
+
+                    <div class="d-flex align-items-center gap-2 overflow-scroll mt-2">
+                        <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                        <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                        <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                        <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                    </div>
+                </div>
+
+                <hr class="opacity-10">
+
+                <!-- Review -->
+                <div class="d-flex flex-column my-4">
+                    <div class="d-flex justify-content-start align-items-center gap-2 mb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        
+                        <p class="text-muted small fw-light ms-1">7 days ago</p>
+                    </div>
+                    <p class="h4 fw-bold mb-1">Great product</p>
+                    <p class="fw-light text-muted">It's a quality product, and very useful.</p>
+
+                    <div class="d-flex align-items-center gap-2 overflow-scroll mt-2">
+                        <div class="placeholder" style="min-height: 84px; min-width: 84px;"></div>
+                    </div>
+                </div>
+
+                <hr class="opacity-10">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-dark d-flex flex-column flex-sm-row justify-content-between text-light fw-light p-2 px-lg-5 py-sm-5">
+        
+        <div class="col d-flex flex-column gap-2 mt-5 mt-sm-0">
+            <p class="small text-uppercase opacity-50">Support</p>
+            <a href="" class="text-decoration-none link-light">Warranty</a>
+            <a href="" class="text-decoration-none link-light">Product Care & Documentation</a>
+            <a href="" class="text-decoration-none link-light">FAQ</a>
+            <a href="" class="text-decoration-none link-light">Product Registration</a>
+        </div>
+        
+        <div class="col d-flex flex-column gap-2 mt-5 mt-sm-0">
+            <p class="small text-uppercase opacity-50">About</p>
+            <a href="" class="text-decoration-none link-light">Our Story</a>
+            <a href="" class="text-decoration-none link-light">Blog</a>
+            <a href="" class="text-decoration-none link-light">How it's made</a>
+        </div>
+        
+        <div class="col d-flex flex-column gap-2 mt-5 mt-sm-0">
+            <p class="small text-uppercase opacity-50">Information</p>
+            <a href="" class="text-decoration-none link-light">Home</a>
+            <a href="" class="text-decoration-none link-light">About Us</a>
+            <a href="" class="text-decoration-none link-light">Offers</a>
+            <a href="" class="text-decoration-none link-light">Contact</a>
+        </div>
+        
+        <div class="col d-flex flex-column gap-2 mt-5 mt-sm-0">
+            <p class="small text-uppercase opacity-50">Explore</p>
+            <a href="" class="text-decoration-none link-light">All Products</a>
+            <a href="" class="text-decoration-none link-light">iPhone</a>
+            <a href="" class="text-decoration-none link-light">Samsung</a>
+            <a href="" class="text-decoration-none link-light">Latest</a>
+        </div>
+
+        <div class="col d-flex flex-column gap-2 mt-5 mt-sm-0">
+            <p class="small text-uppercase opacity-50">Join our community</p>
+            <p>Subscribe to receive first-hand brand updates, access to exclusive deals, and 15% off your first order.</p>
+            <input class="form-control form-control-lg rounded-0 fs-6" type="text" placeholder="Email" aria-label=".form-control-lg example">
+            <p class="small text-uppercase opacity-50 mt-2">Follow Us</p>
+            <div class="d-flex justify-content-between justify-content-lg-start gap-3">
+                <a href="#" class="hover rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-light" style="width: 36px; height: 36px;">
+                    <i class="bi bi-instagram fs-5"></i>
+                </a>
+                <a href="#" class="hover rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-light" style="width: 36px; height: 36px;">
+                    <i class="bi bi-facebook fs-5"></i>
+                </a>
+                <a href="#" class="hover rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-light" style="width: 36px; height: 36px;">
+                    <i class="bi bi-twitter-x fs-5"></i>
+                </a>
+                <a href="#" class="hover rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-light" style="width: 36px; height: 36px;">
+                    <i class="bi bi-youtube fs-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subfooter -->
+    <section class="bg-dark d-flex flex-column flex-sm-row align-items-center text-light small p-2 px-lg-5 py-3">
+        <p class="opacity-50 small">2024 econvert® LLC. All rights reserved.</p>
+
+        <div class="opacity-75 d-flex align-items-start align-items-lg-end gap-4 ms-sm-auto mt-3 mt-sm-0">
+            <a href="" class="text-decoration-none link-light small">Terms & Conditions</a>
+            <a href="" class="text-decoration-none link-light small">Privacy Policy</a>
+            <a href="" class="text-decoration-none link-light small">Sales</a>
+        </div>
+    </section>
+
+    <!-- MODAL - Cart - Desktop -->
+    <div class="modal fade justify-content-end" id="cartDesktop" tabindex="-1" aria-labelledby="cartDesktop" aria-hidden="true">
+        <div class="cart-desktop modal-dialog modal-fullscreen">
+            
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <p class="h5">2 Items</p>
+                    </div>
+
+                    <span type="button" class="material-symbols-outlined fs-3 ms-auto" data-bs-dismiss="modal" aria-label="Close">close</span>
+                </div>
+
+                <div class="modal-body d-flex flex-column">
+                    <!-- Products -->
+                    <div class="d-flex flex-column overflow-auto">
+                        <!-- Product Item -->
+                        <div class="bg-white rounded border-bottom d-flex align-items-center px-2 py-4">
+                            <div class="placeholder bg-dark opacity-25" style="height: 82px; min-width: 82px;"></div>
+                            <div class="d-flex flex-column ms-2">
+                                <p class="h5">Product Name</p>
+                                <p class="small text-uppercase text-muted opacity-75">iPhone 15 Pro</p>
+    
+                                <div class="input-group small mt-2">
+                                    <span class="input-group-text bg-white hover rounded-0 px-2 py-1">
+                                        <i class="bi bi-dash" style="font-size: 10px;"></i>
+                                    </span>
+    
+                                    <span class="input-group-text bg-white">
+                                        <p style="font-size: 10px;">1</p>
+                                    </span>
+    
+                                    <span class="input-group-text bg-white hover rounded-0 px-2 py-1">
+                                        <i class="bi bi-plus" style="font-size: 10px;"></i>
+                                    </span>
+                                </div>
+                            </div>
+    
+                            <p class="fs-5 ms-auto mb-auto p-1">$60.00</p>
+                        </div>
+
+                        <!-- Product Item -->
+                        <div class="bg-white rounded border-bottom d-flex align-items-center px-2 py-4">
+                            <div class="placeholder bg-dark opacity-25" style="height: 82px; min-width: 82px;"></div>
+                            <div class="d-flex flex-column ms-2">
+                                <p class="h5">Product Name</p>
+                                <p class="small text-uppercase text-muted opacity-75">iPhone 15 Pro</p>
+    
+                                <div class="input-group small mt-2">
+                                    <span class="input-group-text bg-white hover rounded-0 px-2 py-1">
+                                        <i class="bi bi-dash" style="font-size: 10px;"></i>
+                                    </span>
+    
+                                    <span class="input-group-text bg-white">
+                                        <p style="font-size: 10px;">1</p>
+                                    </span>
+    
+                                    <span class="input-group-text bg-white hover rounded-0 px-2 py-1">
+                                        <i class="bi bi-plus" style="font-size: 10px;"></i>
+                                    </span>
+                                </div>
+                            </div>
+    
+                            <p class="fs-5 ms-auto mb-auto p-1">$60.00</p>
+                        </div>
+
+    
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="d-flex flex-column align-items-center gap-2 mt-auto mb-5 mb-lg-0">
+                        <p><i class="bi bi-box-seam me-2"></i>Order now to receive as soon as<b class="ms-1">Sunday 05 May</b></p>
+                        <button type="button" class="btn btn-lg btn-dark rounded-pill fs-6 text-uppercase px-5 py-3 w-100">CHECKOUT <i class="bi bi-dot me-2"></i> $120.00</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL - Cart - Mobile -->
+    <div class="modal fade justify-content-end" id="cartMobile" tabindex="-1" aria-labelledby="cartMobile" aria-hidden="true">
+        <div class="cart-mobile modal-dialog modal-fullscreen">
+            
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <p class="h5">2 Items</p>
+                    </div>
+
+                    <span type="button" class="material-symbols-outlined fs-3 ms-auto" data-bs-dismiss="modal" aria-label="Close">close</span>
+                </div>
+
+                <div class="modal-body d-flex flex-column">
+                    <!-- Products -->
+                    <div class="d-flex flex-column overflow-auto">
+                        <!-- Product Item -->
+                        <div class="bg-white rounded border-bottom d-flex align-items-center px-2 py-4">
+                            <div class="placeholder bg-dark opacity-25" style="height: 82px; min-width: 82px;"></div>
+                            <div class="d-flex flex-column ms-2">
+                                <p class="h5">Product Name</p>
+                                <p class="small text-uppercase text-muted opacity-75">iPhone 15 Pro</p>
+    
+                                <div class="input-group small mt-2">
+                                    <span class="input-group-text bg-white hover rounded-0 px-2 py-1">
+                                        <i class="bi bi-dash" style="font-size: 10px;"></i>
+                                    </span>
+    
+                                    <span class="input-group-text bg-white">
+                                        <p style="font-size: 10px;">1</p>
+                                    </span>
+    
+                                    <span class="input-group-text bg-white hover rounded-0 px-2 py-1">
+                                        <i class="bi bi-plus" style="font-size: 10px;"></i>
+                                    </span>
+                                </div>
+                            </div>
+    
+                            <p class="fs-5 ms-auto mb-auto p-1">$60.00</p>
+                        </div>
+
+                        <!-- Product Item -->
+                        <div class="bg-white rounded border-bottom d-flex align-items-center px-2 py-4">
+                            <div class="placeholder bg-dark opacity-25" style="height: 82px; min-width: 82px;"></div>
+                            <div class="d-flex flex-column ms-2">
+                                <p class="h5">Product Name</p>
+                                <p class="small text-uppercase text-muted opacity-75">iPhone 15 Pro</p>
+    
+                                <div class="input-group small mt-2">
+                                    <span class="input-group-text bg-white hover rounded-0 px-2 py-1">
+                                        <i class="bi bi-dash" style="font-size: 10px;"></i>
+                                    </span>
+    
+                                    <span class="input-group-text bg-white">
+                                        <p style="font-size: 10px;">1</p>
+                                    </span>
+    
+                                    <span class="input-group-text bg-white hover rounded-0 px-2 py-1">
+                                        <i class="bi bi-plus" style="font-size: 10px;"></i>
+                                    </span>
+                                </div>
+                            </div>
+    
+                            <p class="fs-5 ms-auto mb-auto p-1">$60.00</p>
+                        </div>
+
+    
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="d-flex flex-column align-items-center gap-2 mt-auto mb-5 mb-lg-0">
+                        <p class="text-center"><i class="bi bi-box-seam me-2"></i>Order now to receive as soon as<b class="ms-1">Sunday 05 May</b></p>
+                        <button type="button" class="btn btn-lg btn-dark rounded-pill fs-6 text-uppercase px-5 py-3 w-100">CHECKOUT <i class="bi bi-dot me-2"></i> $120.00</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
