@@ -201,3 +201,22 @@ i, a, p, h1, h2, h3, h4, h5, h6 {
         padding: 0 320px!important;
     }
 }
+
+.carousel-caption, .carousel-indicators {
+    left: 6%;
+    right: 6%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 84px;
+}
+
+.econtainer {
+    padding: 0 84px;
+}
+
+@media only screen and (max-width: 600px) {
+    .econtainer {
+        padding: 0 8px;
+    }
+}
