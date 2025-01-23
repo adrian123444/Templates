@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Picaso Template</title>
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- Navigation - Desktop -->
+    <div class="bg-white sticky-top d-none d-lg-flex align-items-center border-bottom px-2 px-lg-3 w-100" style="height: 92px;">
+        <!-- Logo -->
+        <a href="#" class="h2 fw-bold text-decoration-none me-4" style="font-family: Hyper Helix;">Picaso</a>
+
+        <div class="d-none d-lg-flex align-items-center gap-1 small h-100">
+            <div class="hover d-flex align-items-center px-4 h-100">
+                <a href="#" class="text-decoration-none text-uppercase link-dark fw-bold">Laptops</a>
+            </div>
+            <div class="hover d-flex align-items-center px-4 h-100">
+                <a href="#" class="text-decoration-none text-uppercase link-dark fw-bold">Phones</a>
+            </div>
+            <div class="hover d-flex align-items-center px-4 h-100">
+                <a href="#" class="text-decoration-none text-uppercase link-dark fw-bold">Printers</a>
+            </div>
+            <div class="hover d-flex align-items-center px-4 h-100">
+                <a href="#" class="text-decoration-none text-uppercase link-dark fw-bold">Sale</a>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center ms-auto h-100">
+            <!-- Icon - Search -->
+            <a href="#" class="hover d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark px-4 h-100">
+                <span class="material-symbols-outlined fs-4">search</span>
+            </a>
+            <!-- Icon - Account -->
+            <a href="#" class="hover d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark px-4 h-100">
+                <span class="material-symbols-outlined fs-4">person</span>
+            </a>
+            <!-- Icon - Cart -->
+            <a href="#" class="hover d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark px-4 h-100">
+                <span class="material-symbols-outlined fs-4">shopping_cart</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Navigation - Mobile -->
+    <div class="bg-white sticky-top d-flex d-lg-none justify-content-between align-items-center w-100" style="height: 92px;">
+        <div class="d-flex align-items-center h-100">
+            <!-- Icon - Menu -->
+            <a href="#" type="button" class="hover d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark px-3 h-100" data-bs-toggle="modal" data-bs-target="#burgerMenu">
+                <span class="material-symbols-outlined fs-4">menu</span>
+            </a>
+
+            <!-- Icon - Search -->
+            <a href="#" class="hover d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark px-3 h-100">
+                <span class="material-symbols-outlined fs-4">search</span>
+            </a>
+        
+        </div>
+        <!-- Logo -->
+        <a href="#" class="h2 fw-bold text-decoration-none me-4" style="font-family: Hyper Helix;">Picaso</a>
+
+        <div class="d-flex align-items-center h-100">
+            <!-- Icon - Account -->
+            <a href="#" class="hover d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark px-3 h-100">
+                <span class="material-symbols-outlined fs-4">person</span>
+            </a>
+            <!-- Icon - Cart -->
+            <a href="#" class="hover d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-dark px-3 h-100">
+                <span class="material-symbols-outlined fs-4">shopping_cart</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Side Burger Menu -->
+    <div class="modal fade" id="burgerMenu" tabindex="-1" aria-labelledby="burgerMenu" aria-hidden="true">
+        <div class="side-burger-menu modal-dialog modal-fullscreen" style="width: 85%;">
+            
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <span type="button" class="material-symbols-outlined fs-1 ms-auto" data-bs-dismiss="modal" aria-label="Close">close</span>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="navbar-nav">
+                        <div class="navbar-item py-3 border-bottom">
+                            <a href="#" class="text-decoration-none text-uppercase link-dark fw-bold">Laptops</a>
+                        </div>
+                        <div class="navbar-item py-3 border-bottom">
+                            <a href="#" class="text-decoration-none text-uppercase link-dark fw-bold">Phone</a>
+                        </div>
+                        <div class="navbar-item py-3 border-bottom">
+                            <a href="#" class="text-decoration-none text-uppercase link-dark fw-bold">Printers</a>
+                        </div>
+                        <div class="navbar-item py-3 border-bottom">
+                            <a href="#" class="text-decoration-none text-uppercase link-dark fw-bold">Sale</a>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Filters & Category List  -->
+    <div class="container-fluid">
+        <div class="row h-100">
+            <div class="col-3 d-none d-lg-flex flex-column overflow-y-auto sticky-top p-5 pe-0 h-100 z-1" style="top: 60px!important;">
+    
+                <div class="accordion mt-1" id="accordionPanelsStayOpenExample">
+    
+                    <!-- Filter Item -->
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button hover rounded-0 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#filtersDevice" aria-expanded="false" aria-controls="filtersDevice">
+                                Device
+                            </button>
+                        </h2>
+    
+                        <div id="filtersDevice" class="accordion-collapse collapse show">
+                            <div class="accordion-body d-flex flex-column p-1">
+                                <!-- Checkbox -->
+                                <div class="form-check hover px-3 py-2">
+                                    <input class="d-none" type="checkbox" value="" id="flexCheckDefault">
+                                    <i class="bi bi-check"></i>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        iPhone
+                                    </label>
+                                </div>
+                                
+                                <!-- Checkbox -->
+                                <div class="form-check hover px-3 py-2">
+                                    <input class="d-none" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label text-muted opacity-75" for="flexCheckChecked">
+                                        iPad
+                                    </label>
+                                </div>
+    
+                                <!-- Checkbox -->
+                                <div class="form-check hover px-3 py-2">
+                                    <input class="d-none" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label text-muted opacity-75" for="flexCheckChecked">
+                                        Airpods
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <hr class="m-0" style="opacity: 5%;">
+
+                    <!-- Filter Item -->
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button hover rounded-0 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#filtersColors" aria-expanded="false" aria-controls="filtersColors">
+                                Colors
+                            </button>
+                        </h2>
+    
+                        <div id="filtersColors" class="accordion-collapse collapse show">
+                            <div class="accordion-body d-flex flex-column p-1">
+                                <!-- Checkbox -->
+                                <div class="form-check hover px-3 py-2">
+                                    <input class="d-none" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label text-muted opacity-75" for="flexCheckDefault">
+                                        Black
+                                    </label>
+                                </div>
+                                
+                                <!-- Checkbox -->
+                                <div class="form-check hover px-3 py-2">
+                                    <input class="d-none" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label text-muted opacity-75" for="flexCheckChecked">
+                                        Brown
+                                    </label>
+                                </div>
+    
+                                <!-- Checkbox -->
+                                <div class="form-check hover px-3 py-2">
+                                    <input class="d-none" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label text-muted opacity-75" for="flexCheckChecked">
+                                        Red
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <hr class="m-0" style="opacity: 5%;">
+
+                    <!-- Filter Item -->
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button hover rounded-0 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#filtersType" aria-expanded="false" aria-controls="filtersType">
+                                Type
+                            </button>
+                        </h2>
+    
+                        <div id="filtersType" class="accordion-collapse collapse show">
+                            <div class="accordion-body d-flex flex-column p-1">
+                                <!-- Checkbox -->
+                                <div class="form-check hover px-3 py-2">
+                                    <input class="d-none" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label text-muted opacity-75" for="flexCheckDefault">
+                                        Cases
+                                    </label>
+                                </div>
+                                
+                                <!-- Checkbox -->
+                                <div class="form-check hover px-3 py-2">
+                                    <input class="d-none" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label text-muted opacity-75" for="flexCheckChecked">
+                                        Sleeves
+                                    </label>
+                                </div>
+    
+                                <!-- Checkbox -->
+                                <div class="form-check hover px-3 py-2">
+                                    <input class="d-none" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label text-muted opacity-75" for="flexCheckChecked">
+                                        Cables
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-sm border hover rounded-0 text-uppercase text-muted opacity-75 small px-4 py-3 mt-3 w-100">Reset Filters</button>
+    
+                </div>
+            </div>
+    
+            <div class="col-12 col-lg-9">
+                <!-- Sorting -->
+                <div class="d-none d-lg-flex justify-content-between align-items-center px-3 mt-5">
+                    <div class="text-uppercase fw-bold fs-2">Category Title</div>
+    
+                    <div class="d-flex align-items-center gap-1">
+                        <p class="text-muted">Sort by</p>
+                        <span class="dropdown">
+                            <b class="d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">Best Selling <span class="material-symbols-outlined">expand_more</span></b>
+    
+                            <ul class="dropdown-menu bg-dark rounded-0" style="min-width: 250px;">
+                                <li><a class="dropdown-item hover-dark text-white fw-light p-3" href="#">Featured</a></li>
+                                <li><a class="dropdown-item hover-dark text-white fw-light p-3" href="#">Best Selling</a></li>
+                                <li><a class="dropdown-item hover-dark text-white fw-light p-3" href="#">Latest</a></li>
+                                <li><a class="dropdown-item hover-dark text-white fw-light p-3" href="#">Price: Low to High</a></li>
+                                <li><a class="dropdown-item hover-dark text-white fw-light p-3" href="#">Price: High to Low</a></li>
+                                <li><a class="dropdown-item hover-dark text-white fw-light p-3" href="#">Date: Old to New</a></li>
+                                <li><a class="dropdown-item hover-dark text-white fw-light p-3" href="#">Date: New to Old</a></li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+
+                    <p class="text-muted ps-3 mt-5">23 products</p>
+    
+                <div class="products-grid gap-2 text-center mb-5">
+    
+                    <!-- Product  -->
+                    <div class="d-flex flex-column gap-1 mx-auto mt-3 w-100" style="max-width: 318px;">
+                        <div class="placeholder w-100" style="max-width: 318px; height: 318px;"alt="Product 1"></div>
+                        <div class="d-flex flex-column align-items-start">
+                            <h5 class="mt-2">Product Name</h5>
+                            <p class="text-muted">iPhone 14 / 15</p>
+                            <p class="mt-1">$29.00</p>
+                        </div>
+                    </div>
+                    <!-- Product  -->
+                    <div class="d-flex flex-column gap-1 mx-auto mt-3 w-100" style="max-width: 318px;">
+                        <div class="placeholder w-100" style="max-width: 318px; height: 318px;"alt="Product 1"></div>
+                        <div class="d-flex flex-column align-items-start">
+                            <h5 class="mt-2">Product Name</h5>
+                            <p class="text-muted">iPhone 14 / 15</p>
+                            <p class="mt-1">$29.00</p>
+                        </div>
+                    </div>
+                    <!-- Product  -->
+                    <div class="d-flex flex-column gap-1 mx-auto mt-3 w-100" style="max-width: 318px;">
+                        <div class="placeholder w-100" style="max-width: 318px; height: 318px;"alt="Product 1"></div>
+                        <div class="d-flex flex-column align-items-start">
+                            <h5 class="mt-2">Product Name</h5>
+                            <p class="text-muted">iPhone 14 / 15</p>
+                            <p class="mt-1">$29.00</p>
+                        </div>
+                    </div>
+                    <!-- Product  -->
+                    <div class="d-flex flex-column gap-1 mx-auto mt-3 w-100" style="max-width: 318px;">
+                        <div class="placeholder w-100" style="max-width: 318px; height: 318px;"alt="Product 1"></div>
+                        <div class="d-flex flex-column align-items-start">
+                            <h5 class="mt-2">Product Name</h5>
+                            <p class="text-muted">iPhone 14 / 15</p>
+                            <p class="mt-1">$29.00</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Product  -->
+                    <div class="d-flex flex-column gap-1 mx-auto mt-3 w-100" style="max-width: 318px;">
+                        <div class="placeholder w-100" style="max-width: 318px; height: 318px;"alt="Product 1"></div>
+                        <div class="d-flex flex-column align-items-start">
+                            <h5 class="mt-2">Product Name</h5>
+                            <p class="text-muted">iPhone 14 / 15</p>
+                            <p class="mt-1">$29.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Product  -->
+                    <div class="d-flex flex-column gap-1 mx-auto mt-3 w-100" style="max-width: 318px;">
+                        <div class="placeholder w-100" style="max-width: 318px; height: 318px;"alt="Product 1"></div>
+                        <div class="d-flex flex-column align-items-start">
+                            <h5 class="mt-2">Product Name</h5>
+                            <p class="text-muted">iPhone 14 / 15</p>
+                            <p class="mt-1">$29.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Product  -->
+                    <div class="d-flex flex-column gap-1 mx-auto mt-3 w-100" style="max-width: 318px;">
+                        <div class="placeholder w-100" style="max-width: 318px; height: 318px;"alt="Product 1"></div>
+                        <div class="d-flex flex-column align-items-start">
+                            <h5 class="mt-2">Product Name</h5>
+                            <p class="text-muted">iPhone 14 / 15</p>
+                            <p class="mt-1">$29.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Product  -->
+                    <div class="d-flex flex-column gap-1 mx-auto mt-3 w-100" style="max-width: 318px;">
+                        <div class="placeholder w-100" style="max-width: 318px; height: 318px;"alt="Product 1"></div>
+                        <div class="d-flex flex-column align-items-start">
+                            <h5 class="mt-2">Product Name</h5>
+                            <p class="text-muted">iPhone 14 / 15</p>
+                            <p class="mt-1">$29.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Product  -->
+                    <div class="d-flex flex-column gap-1 mx-auto mt-3 w-100" style="max-width: 318px;">
+                        <div class="placeholder w-100" style="max-width: 318px; height: 318px;"alt="Product 1"></div>
+                        <div class="d-flex flex-column align-items-start">
+                            <h5 class="mt-2">Product Name</h5>
+                            <p class="text-muted">iPhone 14 / 15</p>
+                            <p class="mt-1">$29.00</p>
+                        </div>
+                    </div>
+    
+
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="bg-dark d-flex flex-column flex-sm-row justify-content-between text-light fw-light p-2 px-lg-5 py-sm-5">
+        
+        <div class="col d-flex flex-column gap-2 mt-5 mt-sm-0">
+            <a href="#" class="h3 fw-bold text-decoration-none me-4" style="font-family: Hyper Helix;">Picaso</a>
+        </div>
+        
+        <div class="col d-flex flex-column gap-2 small mt-5 mt-sm-0">
+            <p class="fw-semibold small text-uppercase">Support</p>
+            <a href="" class="text-decoration-none link-light fs-6">Warranty</a>
+            <a href="" class="text-decoration-none link-light fs-6">Product Care & Documentation</a>
+            <a href="" class="text-decoration-none link-light fs-6">FAQ</a>
+            <a href="" class="text-decoration-none link-light fs-6">Product Registration</a>
+        </div>
+        
+        <div class="col d-flex flex-column gap-2 small mt-5 mt-sm-0">
+            <p class="fw-semibold small text-uppercase">About</p>
+            <a href="" class="text-decoration-none link-light fs-6">Our Story</a>
+            <a href="" class="text-decoration-none link-light fs-6">Blog</a>
+            <a href="" class="text-decoration-none link-light fs-6">How it's made</a>
+        </div>
+        
+        <div class="col d-flex flex-column gap-2 small mt-5 mt-sm-0">
+            <p class="fw-semibold small text-uppercase">Information</p>
+            <a href="" class="text-decoration-none link-light fs-6">Home</a>
+            <a href="" class="text-decoration-none link-light fs-6">About Us</a>
+            <a href="" class="text-decoration-none link-light fs-6">Offers</a>
+            <a href="" class="text-decoration-none link-light fs-6">Contact</a>
+        </div>
+        
+        <div class="col d-flex flex-column gap-2 small mt-5 mt-sm-0">
+            <p class="fw-semibold small text-uppercase">Follow Us</p>
+            <div class="d-flex justify-content-between justify-content-lg-start gap-3">
+                <a href="#" class="hover rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-light" style="width: 36px; height: 36px;">
+                    <i class="bi bi-instagram fs-6"></i>
+                </a>
+                <a href="#" class="hover rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-light" style="width: 36px; height: 36px;">
+                    <i class="bi bi-facebook fs-6"></i>
+                </a>
+                <a href="#" class="hover rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-light" style="width: 36px; height: 36px;">
+                    <i class="bi bi-twitter-x fs-6"></i>
+                </a>
+                <a href="#" class="hover rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center text-decoration-none link-light" style="width: 36px; height: 36px;">
+                    <i class="bi bi-youtube fs-6"></i>
+                </a>
+            </div>
+            <a href="" class="text-decoration-none link-light fs-6">contact@econvert.io</a>
+            <a href="" class="text-decoration-none link-light fs-6">+40 0770 931 244</a>
+        </div>
+
+    </section>
+
+    <!-- Subfooter -->
+    <section class="bg-dark d-flex flex-column flex-sm-row align-items-center text-light small p-2 px-lg-5 py-3">
+        <p class="opacity-50 small">2024 econvert® LLC. All rights reserved.</p>
+
+        <div class="opacity-75 d-flex align-items-start align-items-lg-end gap-4 ms-sm-auto mt-3 mt-sm-0">
+            <a href="" class="text-decoration-none link-light small">Terms & Conditions</a>
+            <a href="" class="text-decoration-none link-light small">Privacy Policy</a>
+            <a href="" class="text-decoration-none link-light small">Sales</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+<style>
+    .carousel-caption, .carousel-indicators {
+        left: 6%;
+        right: 6%;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 84px;
+    }
+
+    .econtainer {
+        padding: 0 84px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .econtainer {
+            padding: 0 8px;
+        }
+    }
+</style>
+
+</html>
